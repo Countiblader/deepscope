@@ -1,0 +1,10 @@
+{
+  "name": "deepscope",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "dev:all": "npm run dev --workspace=apps/web & npm run dev --workspace=apps/server"
+  }
+}
